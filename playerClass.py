@@ -23,9 +23,3 @@ class Player:
     def update_score(self, p_score="0"):
         self.score = p_score
         return self.score
-
-    def reset(self):
-        self.tag = ""
-        self.score = "0"
-        self.alt = "1"
-        self.chara = "Blank"
