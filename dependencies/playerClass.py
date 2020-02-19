@@ -8,7 +8,7 @@ class Player:
         self.alt = alt
         self.score = score
 
-    def update_tag(self, p_tag=""):
+    def update(self, p_tag=""):
         self.tag = p_tag
         return self.tag
 

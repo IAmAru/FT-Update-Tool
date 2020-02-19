@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter.ttk import Combobox
-from resetFunction import reset_func
-from updateButtonPressed import button_Pressed
-from switchFunction import playerSwitch
+from dependencies.resetFunction import reset_func
+from dependencies.updateButtonPressed import button_Pressed
+from dependencies.switchFunction import playerSwitch
 
 win = tk.Tk()
 win.title("SASU Stream Updater by Aru")

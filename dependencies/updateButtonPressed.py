@@ -1,11 +1,11 @@
-from playerClass import Player
-from updateFunction import update
+from dependencies.playerClass import Player
+from dependencies.updateFunction import update
 p = Player()
 
 
 def button_Pressed():
     """Gathers box info, then runs the update function."""
-    from gui import entry1, entry2, entry3, entry4, combo1, combo2, combo3, combo4, combo5, combo6, combo7
+    from dependencies.gui import entry1, entry2, entry3, entry4, combo1, combo2, combo3, combo4, combo5, combo6, combo7
     P1Button = p.update_tag(p_tag=entry1.get())
     P2Button = p.update_tag(p_tag=entry2.get())
     P1ScoreButton = p.update_score(p_score=entry3.get())
