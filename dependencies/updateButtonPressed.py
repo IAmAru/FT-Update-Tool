@@ -32,5 +32,5 @@ def button_Pressed():
     if PhaseLength_Val_Button == "":
         PhaseLength_Val_Button = "23"
     update(P1=P1Button, P2=P2Button, P1Score=P1ScoreButton, P2Score=P2ScoreButton, P1Char=P1CharButton,
-           P2Char=P2CharButton, P1Alt=P1AltButton, P2Alt=P2AltButton, RoundName=RoundNameButton,
+           P2Char=P2CharButton, P1Alt=P1AltButton, P2Alt=P2AltButton, Round=RoundNameButton,
            PhaseLength_Val=PhaseLength_Val_Button)
