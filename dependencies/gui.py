@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter.ttk import Combobox
-from dependencies.resetFunction import reset_func
 from dependencies.updateButtonPressed import button_Pressed
+from dependencies.updateFunction import *
 from dependencies.switchFunction import playerSwitch
 
 win = tk.Tk()
@@ -37,8 +37,10 @@ DropDown2 = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
 PhaseNameBox1 = ["Winner's Round", "Loser's Round", "Winner's Quarters", "Winner's Semis", "Winner's Finals",
                  "Loser's Quarters", "Loser's Semis", "Loser's Finals"]
-
 PhaseLength = ["2/3", "3/5"]
+
+# I wish there was a more "elegant" way to go about this... but I don't think there is.
+
 entry1 = tk.Entry(win)  # Initializes Player 1 Name Box
 entry1.grid(column=2, row=0)
 entry2 = tk.Entry(win)  # Initializes Player 2 Name Box
@@ -79,7 +81,7 @@ win.config(menu=menu)
 
 subMenu = tk.Menu(menu, tearoff=0)
 menu.add_cascade(label="Commands", menu=subMenu)
-subMenu.add_command(label="Reset", command=reset_func)
+subMenu.add_command(label="Reset", command=update)
 subMenu.add_command(label="Update", command=button_Pressed)
 
 

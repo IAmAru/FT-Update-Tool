@@ -4,7 +4,10 @@ p = Player()
 
 
 def button_Pressed():
-    """Gathers box info, then runs the update function."""
+    """
+    Gathers box info, then runs the update function with those as args.
+    Wonder if I can make it better? Haven't come up with any ideas.
+    """
     from dependencies.gui import entry1, entry2, entry3, entry4, combo1, combo2, combo3, combo4, combo5, combo6, combo7
     P1Button = p.update_tag(p_tag=entry1.get())
     P2Button = p.update_tag(p_tag=entry2.get())

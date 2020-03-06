@@ -1,11 +1,13 @@
 from dependencies.playerClass import Player
 from dependencies.updateButtonPressed import button_Pressed
+
 p = Player()
 
 
 def playerSwitch():
     from dependencies.gui import entry1, entry2, entry3, entry4, combo1, combo2, combo3, combo4
-    """In case it's needed, the Switch button works to switch sides. P1>P2 and P2>P1."""
+    """In case it's needed, the Switch button works to switch sides. P1>P2 and P2>P1. I think it'd be really good if
+    I could find a better way to go about it, without many lines or it being so awkward. I'll see what I can do."""
     P1Box = entry1.get()
     P2Box = entry2.get()
     P1ScoreBox = entry3.get()

@@ -1,6 +1,6 @@
 class Player:
 
-    """An attempt to represent a Smash Player."""
+    """An attempt to represent a Smash Player. Could probably be done better, especially the functions under."""
 
     def __init__(self, tag="", chara="Blank", alt="1", score="0"):
         self.tag = tag
