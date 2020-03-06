@@ -5,7 +5,7 @@ def update(P1="", P2="", P1Score="0", P2Score="0", P1Char="Blank",
            P2Char="Blank", P1Alt="1", P2Alt="1", Round="", PhaseLength_Val="23"):
 
     """Takes the args for basically everything it needs, digs them from what the gui boxes defines them as. Really,
-    it's only called when the button is pressed and when the software starts."""
+    it's only called when the button is pressed and when the software closes."""
 
     filename = [P1, P2, P1Score, P2Score, P1Char, P2Char, Round]
     filename_str = ["P1", "P2", "P1Score", "P2Score", "P1Char", "P2Char", "Round"]
